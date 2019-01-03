@@ -39,8 +39,9 @@ class App extends React.Component {
             minScale={0.5}
             maxScale={2}
             onPanAndZoom={this.handlePanAndZoom}
-            ignorePanOutside={true}
             disabled={false}
+            wheelDisabled
+            ignorePanOutside
             style={{ width: 500, height: 500, boxSizing: 'border-box', border: '1px solid black', position: 'relative' }}
             onPanMove={this.handlePanMove}
         >
